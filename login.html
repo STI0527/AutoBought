@@ -5,6 +5,7 @@
 <head>
     <title>AutoBought</title>
     <link rel="icon" type="image/png" href="static/icon.png">
+    <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,24 +19,59 @@
         </a>
     </header>
 
-    <form>
-    <input type="email" name="email" placeholder="Електронна адреса...">
-    <input type="password"  name="password" placeholder="Пароль...">
-    <br>
-    <br>
-    <input type="submit" value="Увійти">
-    </form>
+    <section class="login-section">
+        <div class="login-general-container">
+            
+            <div class="login-left-container">
 
-    <br>
-    <br>
-    <br>
-    <hr>
+                <div>
+                    Авторизація
+                </div>
 
-    <a href="registration.html">Не маєте акаунта? Зареєструватися</a>
+                <form>
+                    <div class="login-container">
+                    <input type="email" name="email" placeholder="Електронна адреса...">
+                        <input type="password"  name="password" placeholder="Пароль...">
+                        <div>
+                            Забули пароль?
+                        </div>
+                        <input class="button" type="submit" value="Увійти">
+                    </div>
+                </form>
 
-    <footer>
-        <p>© 2025 AutoBought. Всі права захищені.</p>
-    </footer>
+                <div>
+                    Або увійти через
+                </div>
+
+                <div class="">
+                    <div>
+                        Google
+                    </div>
+
+                    <div>
+                        Instagram
+                    </div>
+
+                    <div>
+                        FaceBook
+                    </div>
+                </div>
+
+                <div>
+                    Ще не маєш акаунта? 
+                    <a href="registration.html">Зареєструйся</a>
+                </div>
+
+
+            </div>
+
+            <div class="image-container">
+                <img  class="login-image" src="static/car_images/subaru_image.jpg">
+            </div>
+        </div>
+
+     </section>
+
 
 </body>
 
