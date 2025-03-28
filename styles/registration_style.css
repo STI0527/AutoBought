@@ -1,0 +1,75 @@
+.registration-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.registration-general-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url('/static/car_images/subaru_image.jpg');
+    background-size: cover;
+    padding: 20px 80px;
+    margin-top: 120px;
+    border-radius: 5%;
+    max-width: 450px;
+
+}
+
+.registration-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.registration-input {
+    width: 100%;
+    height: 36px;
+    padding: 5px 6px;
+    border-radius: 6px;
+    margin: 14px 0px;
+}
+
+.registration-button {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: #FFC107;
+    border-color: #FFD54F;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 12px;
+    transition: background-color 0.3s,
+    scale 0.15s;
+    
+    padding: 5px 100px;
+    cursor: pointer;
+    }
+    
+    
+    .registration-button:hover {
+        background-color: #c69502;
+    }
+    
+    .registration-button:active {
+        scale: 0.95;
+    }
+
+    .choose-avatar-text {
+        color: #FFC107;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 12px;
+    }
+
+
+
+
+

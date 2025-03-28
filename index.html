@@ -5,7 +5,8 @@
 <head>
     <title>AutoBought</title>
     <link rel="icon" type="image/png" href="static/icon.png">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/main_style.css">
+    <link rel="stylesheet" href="styles/general_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,10 +15,15 @@
 <body>
 
     <header>
-    <h1>AutoBought</h1>
+        <a href="index.html">
+            AutoBought
+         </a>
     </header>
+   
     
-    <section>
+    <section class="main-panel-container">
+    
+        <section>
         <a href="admin_panel.html">
             Панель адміністратора |
         </a>
@@ -25,8 +31,6 @@
         <a href="login.html">Авторизуватися</a>
 
     </section>
-
-    <hr>
 
     <!-- <table border="1">
 
@@ -61,58 +65,68 @@
         </a>
 
     </section>
-
-        <br>
-        <br>
-
-    <hr>    
+   
         <input type="search" placeholder="Пошук...">
 
-    <hr>
+    </section>
 
-    <div>
+<section class="cars-container">
+
+    <div class="car-container">
         <a href="car_info.html">
-            <img src="static/car_images/subaru_image.jpg" style="width: 196px; height: 196px;
-            object-fit: cover;">
-            <p>Subaru WRX STI</p>
+            <img class="car-image" src="static/car_images/subaru_image.jpg">
+            <div class="car-title">
+                Subaru WRX STI
+            </div>
         </a>
 
-        <p><i>40 000$</i></p>
+        <div class="price-text">40 000$</div>
 
-        <p>2016 рік | 2.5 л | МКПП | 20 тис. км</p>
+        <div class="car-details-container">2016 рік | 2.5 л | МКПП | 20 тис. км</div>
 
     </div>
 
-    <hr>
-
-    <div>
+    <div class="car-container">
         <a href="car_info.html">
-            <img src="static/car_images/bmw_m3_image.jpg" style="width: 196px; height: 196px;
-            object-fit: cover;">
-            <p>BMW M3 (E36)</p>
+            <img class="car-image" src="static/car_images/bmw_m3_image.jpg">
+            <div class="car-title">
+                BMW M3 (E36)
+            </div>
         </a>
 
-        <p><i>10 000$</i></p>
+        <div class="price-text">10 000$</div>
 
-        <p>1998 рік | 3.2 л | МКПП | 320 тис. км</p>
+        <div class="car-details-container">1998 рік | 3.2 л | МКПП | 320 тис. км</div>
 
     </div>
 
-    <hr>
-
-    <div>
+    <div class="car-container">
         <a href="car_info.html">
-            <img src="static/car_images/countach_image.jpg" style="width: 196px; height: 196px;
-            object-fit: cover;">
-            <p>Lamborghini Countach</p>
+            <img class="car-image" src="static/car_images/countach_image.jpg">
+            <div class="car-title">
+                Lamborghini Countach
+            </div>
         </a>
 
-        <p><i>120 000$</i></p>
+        <div class="price-text">120 000$</div>
 
-        <p>1985 рік | 5.2 л | МКПП | 80 тис. км</p>
+        <div class="car-details-container">1985 рік | 5.2 л | МКПП | 80 тис. км</div>
     </div>
 
-    <hr>
+    <div class="car-container">
+        <a href="car_info.html">
+            <img class="car-image" src="static/car_images/subaru_image.jpg">
+            <div class="car-title">
+                Lamborghini Countach
+            </div>
+        </a>
+
+        <div class="price-text">120 000$</div>
+
+        <div class="car-details-container">1985 рік | 5.2 л | МКПП | 80 тис. км</div>
+    </div>
+
+</section>
 
 
     <footer>

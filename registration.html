@@ -5,6 +5,8 @@
 <head>
     <title>AutoBought</title>
     <link rel="icon" type="image/png" href="static/icon.png">
+    <link rel="stylesheet" href="styles/general_style.css">
+    <link rel="stylesheet" href="styles/registration_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,51 +15,41 @@
 <body>
     <header>
         <a href="index.html">
-            <h1>AutoBought</h1>
-        </a>
+            AutoBought
+         </a>
     </header>
 
 
-    <section>
+    <section class="registration-section">
 
-    <h3><i>Реєстрація</i></h3>
+    <div class="registration-general-container">
+        <div class="registration-title">Реєстрація</div>
 
-    <form>
-        <input type="text" name="name" placeholder="Ім'я">
-        <br>
-        <br>
-        <input type="email" name="email" placeholder="Електронна адреса...">
-        <br>
-        <br>
-        <input type="password"  name="password" placeholder="Пароль...">
-        <br>
-        <br>
-        <input type="text" placeholder="Номер телефону">
-        <br>
-        <br>
-        <input type="text" placeholder="Місто">
+        <form>
+            <input class="registration-input" type="text" name="name" placeholder="Ім'я">
+       
+            <input class="registration-input" type="email" name="email" placeholder="Електронна адреса...">
+      
+            <input class="registration-input" type="password"  name="password" placeholder="Пароль...">
+        
+            <input class="registration-input" type="text" placeholder="Номер телефону">
+           
+            <input class="registration-input" type="text" placeholder="Місто">
 
-        <br>
-        <br>
-        <p>Виберіть аватар:</p>
-        <input type="file" placeholder="Виберіть аватар">
-        <br>
-        <br>
-        <input type="submit" value="Зареєструватися">
-    </form>
+            <div class="choose-avatar-text">Виберіть аватар:</div>
+            <input  class="registration-input" type="file" placeholder="Виберіть аватар">
+           
+            <input class="registration-button" type="submit" value="Зареєструватися">
 
-</section>
+        </form>
 
-    <br>
-    <br>
-    <br>
-    <br>
+        </div>
 
-    <hr>
+    </section>
 
-    <a href="index.html">
-        <button>Пропустити</button>
-    </a>
+        <a href="index.html">
+            <button>Пропустити</button>
+        </a>
 
 
     <footer>

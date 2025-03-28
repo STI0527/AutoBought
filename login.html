@@ -5,7 +5,8 @@
 <head>
     <title>AutoBought</title>
     <link rel="icon" type="image/png" href="static/icon.png">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/login_style.css">
+    <link rel="stylesheet" href="styles/general_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,8 +16,8 @@
 
     <header>
         <a href="index.html">
-            <h1>AutoBought</h1>
-        </a>
+            AutoBought
+         </a>
     </header>
 
     <section class="login-section">
@@ -24,54 +25,61 @@
             
             <div class="login-left-container">
 
-                <div>
+                <div class="authorization-head-text">
                     Авторизація
                 </div>
 
                 <form>
                     <div class="login-container">
-                    <input type="email" name="email" placeholder="Електронна адреса...">
-                        <input type="password"  name="password" placeholder="Пароль...">
-                        <div>
+                    <input class="login-input" type="email" name="email" placeholder="Електронна адреса...">
+                        <input class="login-input" type="password"  name="password" placeholder="Пароль...">
+                        <div class="forgot-password-text">
                             Забули пароль?
                         </div>
-                        <input class="button" type="submit" value="Увійти">
+                        <input class="login-button" type="submit" value="Увійти">
                     </div>
                 </form>
 
-                <div>
-                    Або увійти через
+                <div class="alternative-login-text">
+                    Або продовжити через
                 </div>
 
-                <div class="">
-                    <div>
-                        Google
-                    </div>
+                <div class="alternative-login-container">
+                    
+                        <a href="https://google.com" target="_blank">
+                            <img class="login-way-photo" src="/static/login_page_logos/google_logo.png">
+                         </a> 
 
-                    <div>
-                        Instagram
-                    </div>
 
-                    <div>
-                        FaceBook
-                    </div>
+                        <a href="https://instagram.com" target="_blank">
+                            <img class="login-way-photo" src="/static/login_page_logos/instagram_logo.png">
+                         </a> 
+
+                        <a href="https://twitter.com" target="_blank">
+                            <img class="login-way-photo" src="/static/login_page_logos/twitter_logo.png">
+                         </a> 
+
+
                 </div>
 
-                <div>
-                    Ще не маєш акаунта? 
-                    <a href="registration.html">Зареєструйся</a>
+                <div class="without-account-text">
+                    Ще не маєш акаунта?&nbsp; 
+                    <a  class="registration-link" href="registration.html">Зареєструйся</a>
                 </div>
 
 
             </div>
 
             <div class="image-container">
-                <img  class="login-image" src="static/car_images/subaru_image.jpg">
+                <img  class="login-image" src="static/logo.png">
             </div>
         </div>
 
      </section>
 
+     <footer>
+        <p>© 2025 AutoBought. Всі права захищені.</p>
+    </footer>
 
 </body>
 
