@@ -6,6 +6,7 @@
     <title>AutoBought</title>
     <link rel="icon" type="image/png" href="static/icon.png">
     <link rel="stylesheet" href="/styles/general_style.css">
+    <link rel="stylesheet" href="/styles/car_info.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,36 +14,94 @@
 
 <body>
     <header>
+        <div id="headerUserLogo" class="header-profile-image-container">
+            <img class="header-profile-image" src="/static/profile_images/acccount_logo.png">
+        </div>
+
+        <div>
         <a href="index.html">
-            <h1>AutoBought</h1>
-        </a>
+            AutoBought
+         </a>
+        </div> 
+
+         <div class="header-right-container"></div>
     </header>
+   
+    
+    <div id="dropdownMenu" class="dropdown-menu-container">
 
-    <section>
-        <h3>Інформація про автомобіль</h3>
+        <img class="menu-user-icon" src="/static/profile_images/acccount_logo.png">
+        <div class="menu-user-name">Користувач</div>
 
-        <img src="static/car_images/subaru_image.jpg" alt="Фото автомобіля" style="width: 196px;
-        height: 196px;
-        object-fit: cover;
-        ">
+        <a href="admin_panel.html">
+            Панель адміністратора
+        </a>
 
-        <iframe width="356px" height="196px;" src="https://www.youtube.com/embed/9u1Rh2LN8Q8" title="Subaru WRX STi 4K 2016 review - Car Keys" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <a href="login.html">Авторизуватися</a>
 
-        <h4>Subaru WRX STI</h4>
-        <p>Ціна: 40 000$</p>
-        <p>Рік випуску: 2016</p>
-        <p>Пробіг: 20 тис. км</p>
-        <p>Об'єм двигуна: 2.5 л</p>
-        <p>Тип пального: бензин</p>
-        <p>Привід: повний</p>
-        <p>Тип КПП: Механічна</p>
-        <p>Країна: Японія</p>
-        <p>Колір: синій</p>
-        <p>Адреса: м. Вінниця, Ленінський район</p>
-        <p></p>
-        <p>Власник: 
-            <a href="profile.html">Юрій</a>
-        </p>
+        <a href="login.html">
+            <button class="logout-button">Вийти з акаунта</button>
+        </a>
+
+    </div>
+
+    <section class="car-info-section">
+        <div class="car-info-title">
+            Інформація про автомобіль
+        </div>
+
+        <div class="car-info-container">
+            
+            <div class="car-media-container">
+                <div class="media-container">
+                    <img src="static/car_images/subaru_image.jpg" alt="Фото автомобіля" class="car-image">
+                </div>
+
+                <div class="media-container">
+                    <iframe class="car-info-video" width="356px" height="196px;" src="https://www.youtube.com/embed/9u1Rh2LN8Q8" title="Subaru WRX STi 4K 2016 review - Car Keys" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+            <div class="car-title-text">
+                Subaru WRX STI
+            </div>
+
+            <div class="car-details-info-container">
+                <div class="car-owner-container">
+                    <div class="car-owner-top-container">
+                        <img class="car-owner-image" src="/static/profile_images/acccount_logo.png">
+                            <a href="profile.html" class="car-owner-link">Юрій</a>
+                    </div>
+
+                    <div class="car-owner-phone">Телефон: 096-500-29-76</div>
+
+                    <div class="car-owner-address-container">м. Вінниця, Ленінський р-н</div>
+                </div>
+
+                <div class="car-details-left-container">
+                    <p>Ціна: 40 000$</p>
+                    <p>Рік випуску: 2016</p>
+                    <p>Пробіг: 20 тис. км</p>
+                    <p>Об'єм двигуна: 2.5 л</p>
+                    <p>Тип пального: бензин</p>
+                </div>
+                
+                <div class="car-details-right-container">
+                    
+                    <p>Привід: повний</p>
+                    <p>Тип КПП: Механічна</p>
+                    <p>Країна: Японія</p>
+                    <p>Колір: синій</p>
+            
+                </div>
+            </div>
+
+            <div class="buy-button-container">
+                <button id="buyButton" class="buy-button">КУПИТИ</button>
+            </div>
+
+        </div>
 
     </section>
 
@@ -56,6 +115,9 @@
         <p>© 2025 AutoBought. Всі права захищені.</p>
     </footer>
  
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/car_info_script.js"></script>
+
 </body>
 
 

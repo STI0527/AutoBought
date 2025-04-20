@@ -1,0 +1,178 @@
+.car-info-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 85px;
+    padding-bottom: 24px;
+}
+
+.car-info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.car-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url('/static/car_images/subaru_image.jpg');
+    background-size: cover;
+    border-radius: 16px;
+    width: 940px;
+    padding: 16px 20px;
+}
+
+.car-media-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin-bottom: 12px;
+
+}
+
+.media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.car-image {
+    width: 426px;
+    height: 256px;
+    border-radius: 16px;
+    object-fit: cover;
+
+}
+
+.car-info-video {
+    border-radius: 16px;
+    width: 426px;
+    height: 256px;
+}
+
+.car-title-text {
+    color:  #FFC107;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 6px 0px 12px 0px;
+}
+
+.car-owner-container {
+    background-color: rgba(141, 141, 141, 0.4);
+    border-radius: 16px;
+    margin-left: 12px;
+    padding: 6px;
+    width: 296px;
+}
+
+.car-owner-link {
+    color: #FFC107;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 14px;
+    margin-right: 24px;
+}
+
+.car-owner-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0px 20px;
+    
+}
+
+.car-owner-image {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    margin: 0px 6px 0px 6px;
+}
+
+.car-owner-container p{
+    color: rgb(255, 255, 255);
+    margin-left: 24px;
+}
+
+.car-owner-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.car-owner-address-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.car-details-info-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    width: 100%;
+}
+
+.car-owner-container p {
+    margin-top: 4px;
+    margin-left: 0px;
+}
+
+.car-details-left-container p, .car-details-right-container p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin: 4px;
+    margin-left: 40px;
+    line-height: 24px;
+}
+
+
+.buy-button {
+    color: rgb(255, 255, 255);
+    background-color: #FFC107;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2ch;
+    border: 1px solid #FFC107;
+    border-radius: 16px;
+    padding: 12px 40px 11px 40px;
+    cursor: pointer;
+    transition: color 0.15s,
+                background-color 0.15s;
+              
+}
+
+.buy-button:hover {
+    color: white;
+    background-color: #d4a004;
+}
+
+.buy-button:active {
+    background-color: #a98108;
+    padding: 10px 38px 9px 38px;
+    margin: 2px;
+}
+
+.buy-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 16px;
+    margin-top: 12px;
+}
+

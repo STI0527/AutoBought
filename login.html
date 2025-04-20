@@ -15,9 +15,11 @@
 <body>
 
     <header>
-        <a href="index.html">
-            AutoBought
-         </a>
+        <div>
+            <a href="index.html">
+                AutoBought
+            </a>
+        </div>
     </header>
 
     <section class="login-section">
@@ -39,6 +41,11 @@
                         <input class="login-button" type="submit" value="Увійти">
                     </div>
                 </form>
+
+                <div id="loginErrorMessage">
+                    Неправильно введений логін або пароль!
+                </div>
+
 
                 <div class="alternative-login-text">
                     Або продовжити через
@@ -80,6 +87,22 @@
      <footer>
         <p>© 2025 AutoBought. Всі права захищені.</p>
     </footer>
+
+    <script>
+        document.querySelector(".login-button").addEventListener("click", showError);
+
+        function showError(event) {
+            event.preventDefault();
+
+            var error = document.getElementById("loginErrorMessage");
+            error.classList.toggle("visible");
+            document.querySelectorAll(".login-input").forEach(function(input) {
+                input.value = "";
+            });
+        }
+
+    </script>
+
 
 </body>
 

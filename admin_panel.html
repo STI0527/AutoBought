@@ -6,6 +6,7 @@
     <title>AutoBought</title>
     <link rel="icon" type="image/png" href="static/icon.png">
     <link rel="stylesheet" href="/styles/general_style.css">
+    <link rel="stylesheet" href="/styles/admin_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,104 +14,163 @@
 
 <body>
     <header>
+        <div id="headerUserLogo" class="header-profile-image-container">
+            <img class="header-profile-image" src="/static/profile_images/acccount_logo.png">
+        </div>
+
+        <div>
         <a href="index.html">
-            <h1>AutoBought</h1>
-        </a>
+            AutoBought
+         </a>
+        </div> 
+
+         <div class="header-right-container"></div>
     </header>
+   
+    
+    <div id="dropdownMenu" class="dropdown-menu-container">
 
-    <a href="stats.html">
-        <h3>Сторінка статистики</h3>
-    </a>
+        <img class="menu-user-icon" src="/static/profile_images/acccount_logo.png">
+        <div class="menu-user-name">Користувач</div>
 
+        <a href="admin_panel.html">
+            Панель адміністратора
+        </a>
 
-    <section>
-    <h3>Список користувачів</h3>
+        <a href="login.html">Авторизуватися</a>
 
-    <table style="border: 1px solid black;">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Email</th>
-                <th>Номер телефона</th>
-                <th>Активність</th>
-                <th>Роль</th>
-                <th>Бан</th>
-                <th>Редагувати</th>
-                <th>Видалити</th>
-            </tr>
-        </thead>
+        <a href="login.html">
+            <button class="logout-button">Вийти з акаунта</button>
+        </a>
 
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>yurijsulima876@gmail.com</td>
-                <td>096-500-29-76</td>
-                <td>Так</td>
-                <td>Адміністратор</td>
-                <td>
-                    <button>
-                        Бан
-                    </button>
-                </td>
-                <td>
-                    <a href="profile.html">
-                        Редагувати
-                    </a>
-                </td>
-                <td>
-                    <button>Видалити</button>
-                </td>
-                
-            </tr>
+    </div>
 
-            <tr>
-                <td>2</td>
-                <td>petrenko_dmytro123@gmail.com</td>
-                <td>067-785-92-36</td>
-                <td>Так</td>
-                <td>Користувач</td>
-                <td>
-                    <button>
-                        Бан
-                    </button>
-                </td>
-                <td>
-                    <a href="profile.html">
-                        Редагувати
-                    </a>
-                </td>
-                <td>
-                    <button>Видалити</button>
-                </td>
-                
-            </tr>
-
-            <tr>
-                <td>3</td>
-                <td>symonenko_oleg12@gmail.com</td>
-                <td>067-256-12-24</td>
-                <td>Ні</td>
-                <td>Користувач</td>
-                <td>
-                    <button>
-                        Бан
-                    </button>
-                </td>
-                <td>
-                    <a href="profile.html">
-                        Редагувати
-                    </a>
-                </td>
-                <td>
-                    <button>Видалити</button>
-                </td>
-                
-            </tr>
-        </tbody>
+    <div class="admin-panel-title">
+        Панель адміністратора
+    </div>
+<!-- 
+    <div class="statistics-link-container">
+        <a href="stats.html">
+            Сторінка статистики...
+        </a>
+    </div> -->
 
 
-    </table>
+    <section class="admin-table-section">
+    
+        <div class="admin-table-container">
+            <div class="admin-title-text">
+                Список користувачів
+            </div>
+            
 
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th class="admin-table-column-title">ID</th>
+                    <th class="admin-table-column-title">Email</th>
+                    <th class="admin-table-column-title">Номер телефона</th>
+                    <th class="admin-table-column-title">Активність</th>
+                    <th class="admin-table-column-title">Роль</th>
+                    <th class="admin-table-column-title">Бан</th>
+                    <th class="admin-table-column-title">Редагувати</th>
+                    <th class="admin-table-column-title">Видалити</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="admin-table-data">1</td>
+                    <td class="admin-table-data">yurijsulima876@gmail.com</td>
+                    <td class="admin-table-data">096-500-29-76</td>
+                    <td class="admin-table-data-status">Так</td>
+                    <td class="admin-table-data">Адміністратор</td>
+                    <td class="admin-table-data">
+                        <button class="ban-button">
+                            Бан
+                        </button>
+                    </td>
+                    <td class="admin-table-data">
+                        <a href="profile.html" class="edit-link">
+                            Редагувати
+                        </a>
+                    </td>
+                    <td class="admin-table-data">
+                        <button class="delete-button">Видалити</button>
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <td class="admin-table-data">2</td>
+                    <td class="admin-table-data">petrenko_dmytro123@gmail.com</td>
+                    <td class="admin-table-data">067-785-92-36</td>
+                    <td class="admin-table-data-status">Так</td>
+                    <td class="admin-table-data">Користувач</td>
+                    <td class="admin-table-data">
+                        <button class="ban-button">
+                            Бан
+                        </button>
+                    </td>
+                    <td class="admin-table-data">
+                        <a href="profile.html" class="edit-link">
+                            Редагувати
+                        </a>
+                    </td>
+                    <td class="admin-table-data">
+                        <button class="delete-button">Видалити</button>
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <td class="admin-table-data">3</td>
+                    <td class="admin-table-data">symonenko_oleg12@gmail.com</td>
+                    <td class="admin-table-data">067-256-12-24</td>
+                    <td class="admin-table-data-status">Ні</td>
+                    <td class="admin-table-data">Користувач</td>
+                    <td class="admin-table-data">
+                        <button class="ban-button">
+                            Бан
+                        </button>
+                    </td>
+                    <td class="admin-table-data">
+                        <a href="profile.html" class="edit-link">
+                            Редагувати
+                        </a>
+                    </td>
+                    <td class="admin-table-data">
+                        <button class="delete-button">Видалити</button>
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <td class="admin-table-data">4</td>
+                    <td class="admin-table-data">davydenko_mykola1995@gmail.com</td>
+                    <td class="admin-table-data">096-647-35-17</td>
+                    <td class="admin-table-data-status">Так</td>
+                    <td class="admin-table-data">Користувач</td>
+                    <td class="admin-table-data">
+                        <button class="ban-button">
+                            Бан
+                        </button>
+                    </td>
+                    <td class="admin-table-data">
+                        <a href="profile.html" class="edit-link">
+                            Редагувати
+                        </a>
+                    </td>
+                    <td class="admin-table-data">
+                        <button class="delete-button">Видалити</button>
+                    </td>
+                    
+                </tr>
+            </tbody>
+
+
+        </table>
+    </div>
 </section>
 
     <hr>
@@ -119,6 +179,9 @@
     <footer>
         <p>© 2025 AutoBought. Всі права захищені.</p>
     </footer>
+
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/admin.js"></script>
 
 </body>
 

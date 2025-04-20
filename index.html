@@ -15,22 +15,36 @@
 <body>
 
     <header>
+        <div id="headerUserLogo" class="header-profile-image-container">
+            <img class="header-profile-image" src="/static/profile_images/acccount_logo.png">
+        </div>
+
+        <div>
         <a href="index.html">
             AutoBought
          </a>
+        </div> 
+
+         <div class="header-right-container"></div>
     </header>
    
     
-    <section class="main-panel-container">
-    
-        <section>
+    <div id="dropdownMenu" class="dropdown-menu-container">
+
+        <img class="menu-user-icon" src="/static/profile_images/acccount_logo.png">
+        <div class="menu-user-name">Користувач</div>
+
         <a href="admin_panel.html">
-            Панель адміністратора |
+            Панель адміністратора
         </a>
 
         <a href="login.html">Авторизуватися</a>
 
-    </section>
+        <a href="login.html">
+            <button class="logout-button">Вийти з акаунта</button>
+        </a>
+
+    </div>
 
     <!-- <table border="1">
 
@@ -61,13 +75,18 @@
 
     <section>
         <a href="profile.html">
-            <button>Особистий кабінет</button>
+            <button class="profile-button">Особистий кабінет</button>
         </a>
-
     </section>
-   
-        <input type="search" placeholder="Пошук...">
 
+    <section class="search-section">
+
+        <div class="search-container">
+            <input class="search-bar" type="search" placeholder="Пошук...">
+            <img class="search-icon" src="static/search.svg">
+        </div>
+        
+        
     </section>
 
 <section class="cars-container">
@@ -132,6 +151,9 @@
     <footer>
         <p>© 2025 AutoBought. Всі права захищені.</p>
     </footer>
+
+
+    <script src="/scripts/script.js"></script>
 
 </body>
 

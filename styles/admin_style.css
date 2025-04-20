@@ -1,0 +1,166 @@
+.admin-table-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.admin-table-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('/static/car_images/subaru_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px 20px 40px 20px;
+    width: 1420px;
+    margin-bottom: 80px;
+
+}
+
+.admin-panel-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 100px;
+}
+
+.statistics-link-container {
+    margin-top: 12px;
+    color: rgb(255, 255, 255);
+}
+
+.admin-table {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 16px;
+    /* padding: 8px 12px; */
+    background-color: rgba(0, 0, 0, 0.4);
+    border-collapse: separate;
+    border-spacing: 0;
+    
+}
+
+.admin-title-text {
+    color: #FFC107;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.admin-table-column-title {
+    color: #FFC107;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid rgb(255, 255, 255);
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+    padding: 12px 8px;
+}
+
+.admin-table-data, .admin-table-data-status {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid rgb(255, 255, 255);
+    border-left: none;
+    border-bottom: none;
+    padding: 12px 8px;
+    
+}
+
+.admin-table thead tr:first-child th:first-child {
+    border-top-left-radius: 16px;
+}
+.admin-table thead tr:first-child th:last-child {
+    border-top-right-radius: 16px;
+}
+
+
+.admin-table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 16px;
+}
+.admin-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 16px;
+}
+
+.ban-button {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: #FFC107;
+    border-color: #FFD54F;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 12px;
+    transition: background-color 0.3s,
+    scale 0.15s;
+
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.ban-button:hover {
+    background-color: #c69502;
+}
+
+.ban-button:active {
+    scale: 0.95;
+}
+
+.edit-link {
+    color: #FFC107;
+    font-style: italic;
+}
+
+.delete-button {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(201, 74, 74);
+    border-radius: 12px;
+    padding: 5px 6px;
+    cursor: pointer;
+    transition: background-color 0.15s,
+    scale 0.15s;
+}
+
+.delete-button:hover {
+    background-color: rgb(160, 60, 60);
+}
+
+.delete-button:active {
+    scale: 0.95;
+}
+
+.statistics-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFC107;
+
+}
+
+.statistics-link-container a {
+    text-decoration: underline;
+    color: inherit;
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+.admin-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

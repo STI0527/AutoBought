@@ -6,6 +6,7 @@
     <title>AutoBought</title>
     <link rel="icon" type="image/png" href="static/icon.png">
     <link rel="stylesheet" href="/styles/general_style.css">
+    <link rel="stylesheet" href="/styles/profile_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,31 +14,62 @@
 
 <body>
     <header>
+        <div id="headerUserLogo" class="header-profile-image-container">
+            <img class="header-profile-image" src="/static/profile_images/acccount_logo.png">
+        </div>
+
+        <div>
         <a href="index.html">
-            <h1>AutoBought</h1>
-        </a>
+            AutoBought
+         </a>
+        </div> 
+
+         <div class="header-right-container"></div>
     </header>
+   
+    
+    <div id="dropdownMenu" class="dropdown-menu-container">
 
-    <section>
-        <h2>Особистий кабінет</h2>
-    </section>
+        <img class="menu-user-icon" src="/static/profile_images/acccount_logo.png">
+        <div class="menu-user-name">Користувач</div>
 
-    <section>
-        <img src="static/profile_images/acccount_logo.png" style="width: 256px; height: 256px;
-        object-fit: cover;">
+        <a href="admin_panel.html">
+            Панель адміністратора
+        </a>
 
-        <h3>Юрій</h3>
-        <p>Телефон: 096-500-29-76</p>
-        <p>м. Вінниця</p>
+        <a href="login.html">Авторизуватися</a>
 
-        <section>
-            <h2>Оголошення користувача</h2>
-            <ul>
-                <li>BMW M3 (E36)</li>
-                <li>Lamborghini Countach</li>
-                <li>Subaru WRX STI</li>
-            </ul>
-        </section>
+        <a href="login.html">
+            <button class="logout-button">Вийти з акаунта</button>
+        </a>
+
+    </div>
+
+    <div class="profile-title-text">
+        Особистий кабінет
+    </div>
+
+    <section class="profile-section">
+       <div class="profile-general-container"> 
+            <div class="left-container">
+                <img class="profile-image" src="static/profile_images/acccount_logo.png" >
+            </div>
+
+            <div class="right-container">
+                <h3>Юрій</h3>
+                <p>Телефон: 096-500-29-76</p>
+                <p>м. Вінниця</p>
+
+                <section>
+                    <h2>Оголошення користувача</h2>
+                    <ul>
+                        <li>BMW M3 (E36)</li>
+                        <li>Lamborghini Countach</li>
+                        <li>Subaru WRX STI</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
     </section>
 
     <section>
@@ -48,14 +80,12 @@
         </a>
     </section>
 
-    <hr>
-    <br>
-    <br>
 
     <footer>
         <p>© 2025 AutoBought. Всі права захищені.</p>
     </footer>
 
+    <script src="/scripts/script.js"></script>
 
 </body>
 

@@ -14,50 +14,86 @@
 
 <body>
     <header>
-        <a href="index.html">
-            AutoBought
-         </a>
+        <div>
+            <a href="index.html">
+                AutoBought
+            </a>
+        </div>
     </header>
+
+
+    <div id="registrationModal" class="registration-modal-background"
+onclick="onModalBackgroundClick(event)">
+
+<div id="modalContent" class="registration-modal-content">
+
+        Дякуємо за реєстрацію! Тепер ви можете у повній мірі насолодитися AutoBought!
+        
+<button class="close-modal-button" onclick="closeModal()">❌</button>
+
+</div>
+
+</div>
 
 
     <section class="registration-section">
 
     <div class="registration-general-container">
-        <div class="registration-title">Реєстрація</div>
+        <div class="registration-container">
+            <div class="registration-title">Реєстрація</div>
 
-        <form>
-            <input class="registration-input" type="text" name="name" placeholder="Ім'я">
-       
-            <input class="registration-input" type="email" name="email" placeholder="Електронна адреса...">
-      
-            <input class="registration-input" type="password"  name="password" placeholder="Пароль...">
+            <form>
+                <input class="registration-input" type="text" name="name" placeholder="Ім'я">
         
-            <input class="registration-input" type="text" placeholder="Номер телефону">
-           
-            <input class="registration-input" type="text" placeholder="Місто">
+                <input class="registration-input" type="email" name="email" placeholder="Електронна адреса...">
+        
+                <input class="registration-input" type="password"  name="password" placeholder="Пароль...">
+            
+                <input class="registration-input" type="text" placeholder="Номер телефону">
+            
+                <input class="registration-input" type="text" placeholder="Місто">
 
-            <div class="choose-avatar-text">Виберіть аватар:</div>
-            <input  class="registration-input" type="file" placeholder="Виберіть аватар">
-           
-            <input class="registration-button" type="submit" value="Зареєструватися">
+                <div class="choose-avatar-text">Виберіть аватар:</div>
+                <input  class="registration-input" type="file" placeholder="Виберіть аватар">
+            
+                <input class="registration-button" type="submit" value="Зареєструватися">
 
-        </form>
+            </form>
 
+            </div>
         </div>
-
+        
     </section>
-
-        <a href="index.html">
-            <button>Пропустити</button>
-        </a>
-
 
     <footer>
         <p>© 2025 AutoBought. Всі права захищені.</p>
     </footer>
 
-</body>
+    <script>
+        var modalWindow = document.getElementById("registrationModal");
 
+        document.querySelector(".registration-button").addEventListener("click", function(event) {
+            event.preventDefault();
+
+            modalWindow.style.display = "block";
+
+        
+        });
+
+        function onModalBackgroundClick(event) {
+            const modalContent = document.getElementById("modalContent");
+            if (!modalContent.contains(event.target)) {
+                closeModal();
+            }
+        }
+
+        function closeModal() {
+            document.getElementById("registrationModal").style.display = "none";
+        }
+
+    </script>
+
+</body>
 
 
 
