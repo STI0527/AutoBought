@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>AutoBought</title>
+    <link rel="icon" type="image/png" href="static/icon.png">
+    <link rel="stylesheet" href="styles/main_style.css">
+    <link rel="stylesheet" href="styles/general_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <header>
+        <div id="headerUserLogo" class="header-profile-image-container">
+            <img class="header-profile-image" src="/static/profile_images/acccount_logo.png">
+        </div>
+
+        <div>
+        <a href="index.html">
+            AutoBought
+         </a>
+        </div> 
+
+         <div class="header-right-container"></div>
+    </header>
+   
+    
+    <div id="dropdownMenu" class="dropdown-menu-container">
+
+        <img class="menu-user-icon" src="/static/profile_images/acccount_logo.png">
+        <div class="menu-user-name">Користувач</div>
+
+        <a href="admin_panel.html">
+            Панель адміністратора
+        </a>
+
+        <a href="login.html">Авторизуватися</a>
+
+        <a href="login.html">
+            <button class="logout-button">Вийти з акаунта</button>
+        </a>
+
+    </div>
+
+    <!-- <table border="1">
+
+        <thead>
+            <tr>
+                <th>
+                    Клітинка
+                </th>
+                <th>
+                    Клітинка
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    Клітинка
+                </td>
+
+                <td>
+                    Клітинка
+                </td>
+            </tr>
+        </tbody>
+
+    </table> -->
+
+
+    <section>
+        <a href="profile.html">
+            <button class="profile-button">Особистий кабінет</button>
+        </a>
+    </section>
+
+    <section class="search-section">
+
+        <div class="search-container">
+            <input class="search-bar" type="search" placeholder="Пошук...">
+            <img class="search-icon" src="static/search.svg">
+        </div>
+        
+        <div>
+            <button class="add-button" id="openModalBtn">Додати оголошення</button>
+        </div>
+
+    </section>
+
+<section class="cars-container">
+
+    <div class="car-container">
+        <a href="car_info.html">
+            <img class="car-image" src="static/car_images/subaru_image.jpg">
+            <div class="car-title">
+                Subaru WRX STI
+            </div>
+        </a>
+
+        <div class="price-text">40 000$</div>
+
+        <div class="car-details-container">2016 рік | 2.5 л | МКПП | 20 тис. км</div>
+
+    </div>
+
+    <div class="car-container">
+        <a href="car_info.html">
+            <img class="car-image" src="static/car_images/bmw_m3_image.jpg">
+            <div class="car-title">
+                BMW M3 (E36)
+            </div>
+        </a>
+
+        <div class="price-text">10 000$</div>
+
+        <div class="car-details-container">1998 рік | 3.2 л | МКПП | 320 тис. км</div>
+
+    </div>
+
+    <div class="car-container">
+        <a href="car_info.html">
+            <img class="car-image" src="static/car_images/countach_image.jpg">
+            <div class="car-title">
+                Lamborghini Countach
+            </div>
+        </a>
+
+        <div class="price-text">120 000$</div>
+
+        <div class="car-details-container">1985 рік | 5.2 л | МКПП | 80 тис. км</div>
+    </div>
+
+    <div class="car-container">
+        <a href="car_info.html">
+            <img class="car-image" src="static/car_images/subaru_image.jpg">
+            <div class="car-title">
+                Lamborghini Countach
+            </div>
+        </a>
+
+        <div class="price-text">120 000$</div>
+
+        <div class="car-details-container">1985 рік | 5.2 л | МКПП | 80 тис. км</div>
+    </div>
+
+</section>
+
+
+<section class="cars-container" id="carsContainer">
+   
+
+  </section>
+
+
+
+<!-- Модальне вікно -->
+<div id="modalWindowBackground" style="display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4);">
+  <div id="modalContent" style="background-color: white; margin: 10% auto; padding: 20px; width: 300px; border-radius: 10px;">
+    <form id="createForm">
+      <label>
+        Назва авто:
+        <input type="text" name="name" placeholder="Напр. Toyota Camry" required>
+      </label><br>
+
+      <label>
+        Ціна ($):
+        <input type="number" name="price" placeholder="Напр. 15000" required>
+      </label><br>
+
+      <label>
+        Рік випуску:
+        <input type="number" name="year" placeholder="Напр. 2015" required>
+      </label><br>
+
+      <label>
+        Об'єм двигуна (л):
+        <input type="number" step="0.1" name="engine_volume" placeholder="Напр. 2.0" required>
+      </label><br>
+
+      <label>
+        Тип трансмісії:
+        <input type="text" name="transmission_type" placeholder="Напр. Автомат" required>
+      </label><br>
+
+      <label>
+        Пробіг (км):
+        <input type="number" name="mileage" placeholder="Напр. 120000" required>
+      </label><br>
+
+      <label>
+        Фото:
+        <input type="file" name="image" accept="image/*" required>
+      </label>
+      <br>
+
+      <button type="submit">Додати</button>
+    </form>
+  </div>
+</div>
+
+
+    <footer>
+        <p>© 2025 AutoBought. Всі права захищені.</p>
+    </footer>
+
+
+    <script>
+        // Відкрити модальне вікно
+        document.getElementById('openModalBtn').onclick = function () {
+          document.getElementById('modalWindowBackground').style.display = 'block';
+        };
+      
+        // Закрити при кліку поза модальним вікном
+        window.onclick = function (event) {
+          const modal = document.getElementById('modalWindowBackground');
+          const content = document.getElementById('modalContent');
+          if (event.target === modal) {
+            modal.style.display = 'none';
+          }
+        };
+      
+        // Обробка форми
+        document.getElementById('createForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+      
+        const formData = new FormData(this);
+      
+        fetch('http://localhost:1234/create', {
+          method: 'POST',
+          body: formData
+        })
+          .then(res => res.json())
+          .then(response => {
+            alert(response.message || 'Успішно');
+            if (response.redirect) {
+              window.location.href = response.redirect;
+            }
+          })
+          .catch(err => {
+            console.error(err);
+            alert('Помилка при відправці');
+          });
+      });
+      </script>
+      
+      
+      <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            fetch('http://localhost:1234/adverts')
+              .then(res => res.json())
+              .then(adverts => {
+                const container = document.getElementById('carsContainer');
+                container.innerHTML = '';
+        
+                adverts.forEach(ad => {
+                  const html = `
+                    <div class="car-container">
+                      <a href="car_info.html?id=${ad.id}">
+                        <img class="car-image" src="${ad.image_url || 'static/default.jpg'}" alt="${ad.name}">
+                        <div class="car-title">${ad.name}</div>
+                      </a>
+                      <div class="price-text">${ad.price} $</div>
+                      <div class="car-details-container">
+                        ${ad.year} рік | ${ad.engine_volume} л | ${ad.transmission_type} | ${ad.mileage} км
+                      </div>
+                      <div class="delete-add-button">
+                        X
+                        </div>
+                    </div>
+                  `;
+                  container.insertAdjacentHTML('beforeend', html);
+                });
+                document.querySelectorAll('.delete-add-button').forEach(button => {
+          button.addEventListener('click', function () {
+            const carContainer = this.closest('.car-container');
+            const id = carContainer.getAttribute('data-id');
+
+            if (confirm('Ви дійсно хочете видалити оголошення?')) {
+              fetch(`http://localhost:1234/adverts/${id}`, {
+                method: 'DELETE'
+              })
+                .then(res => res.json())
+                .then(response => {
+                  alert(response.message || 'Оголошення видалено');
+                  carContainer.remove(); // видалити з DOM
+                })
+                .catch(err => {
+                  console.error(err);
+                  alert('Помилка при видаленні');
+                });
+            }
+          });
+        });
+      })
+      .catch(err => {
+        console.error(err);
+        container.innerHTML = '<p>Не вдалося завантажити оголошення.</p>';
+      });
+  });
+        </script>
+
+    <script src="/scripts/script.js"></script>
+
+</body>
+
+
+
+
+</html>
